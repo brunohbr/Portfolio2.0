@@ -4,4 +4,19 @@
     background-size: cover;
     
   }
+  .nav-link, .bi {
+    color: #fff !important;
+  }
   
+  .nav-link:hover, .bi:hover {
+    color: #0dcaf0 !important;
+    
+  }
+
+  .bi{
+   font-size: 1.2rem; 
+  }
+
+  .font-second{
+    font-family: 'Courier New', Courier, monospace;
+  }

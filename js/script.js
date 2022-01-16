@@ -15,14 +15,15 @@ var nav = document.querySelector('nav');
         } else {
           nav.classList.remove('bg-dark', 'shadow');
         }
+       
       });
+     
+     
+console.log(document.documentElement.clientWidth
+  )
 
 
-writeText()
-
-
-
-
+      writeText()
 function writeText(){
   
     textEl.innerText = text[i].slice(0, idx)
