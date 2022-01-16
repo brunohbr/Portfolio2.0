@@ -1,10 +1,11 @@
 const textEl = document.getElementById('text')
 const speedEl = document.getElementById('speed')
-const text = 'Analista de Sistemas'
+const text = ['Analista de Sistemas','Densenvolvedor Front End']
+
 
 let idx = 1
-let speed = 300 / 1.5
-
+let speed = 300 / 2
+let i =0
 
 var nav = document.querySelector('nav');
 
@@ -21,14 +22,24 @@ writeText()
 
 
 
-function writeText(){
-    textEl.innerText = text.slice(0, idx)
-    idx++
 
-    if(idx> text.length){
+function writeText(){
+  
+    textEl.innerText = text[i].slice(0, idx)
+    idx++
+    
+
+    if(idx > text[i].length){
         idx = 1
+        i++
     }
+    if(i == text.length){
+      i=0
+    }
+    
     setTimeout(writeText, speed)
+    
+    
     
 }
 
